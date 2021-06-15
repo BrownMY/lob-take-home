@@ -7,7 +7,7 @@ const addressList = require('./addresses.json')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('Welcome to the Homepage.')
+    res.send('Welcome to the Homepage. Please visit url /addresses to view all addresses')
 })
 
 app.get('/addresses', (req, res) => {
@@ -18,6 +18,7 @@ app.get(`/addresses/:filter`, (req, res) => {
     let filteredAddresses = []
     const filterAddressesFromSearch = () => {
         for (let address of addressList) {
+            //Needs to bring all to lowercase
             let addressValues = Object.values(address)
             let filtered = addressValues.filter(address => address.includes(req.params.filter))
 
