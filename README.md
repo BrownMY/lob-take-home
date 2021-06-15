@@ -2,7 +2,7 @@
 
 
 Type 'npm i' into command line to install all dependencies.
-have cURL installed for checking HTTP methods.
+Have cURL installed for checking HTTP methods.
 
 These include: 
 Express, 
