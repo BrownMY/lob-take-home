@@ -9,3 +9,5 @@ Express,
 Nodemon
 
 To run server, type 'nodemon' into command line
+
+Server runs on localhost:8000
